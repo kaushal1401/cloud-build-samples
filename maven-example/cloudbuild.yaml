@@ -29,3 +29,5 @@ steps:
     args: ['run', 'deploy', 'clouddemo', '--image', 'images', '--region', 'us-east1']
 images: ["us-east1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAME/hellospring"]
 # [END cloudbuild_maven]
+options:
+  logging: CLOUD_LOGGING_ONLY
